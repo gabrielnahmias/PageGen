@@ -38,7 +38,9 @@ define("DIR_CLS", DIR_ASSETS."/cls");
 define("DIR_DATA", DIR_ASSETS."/data");
 define("DIR_IMG", DIR_ASSETS."/img");
 define("DIR_MODULES", DIR_IMG."/apple");
-define("DIR_MODS", DIR_MODULES);	// A simple alias.
+define("DIR_MODS", DIR_MODULES);			// A simple alias.
+define("DIR_MODS", DIR_MIN);				// Minification utility.
+define("DIR_SMARTY", DIR_MODS."/smarty");	// Templating engine directory.
 
 define("DIR_APPLE", DIR_IMG."/apple");
 define("DIR_APPLE_ICONS", DIR_APPLE."/icons");
@@ -49,4 +51,4 @@ define("DIR_CON", DIR_JS."/Console");
 define("DIR_JQUI", DIR_JS."/jquery-ui");
 
 // Files
-define("FILE_EXAMPLE", "file.txt");
+define("FILE_EXAMPLE", "file.txt");			// Example
