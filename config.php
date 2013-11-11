@@ -37,10 +37,10 @@ define("DIR_CSS", DIR_ASSETS."/css");
 define("DIR_CLS", DIR_ASSETS."/cls");
 define("DIR_DATA", DIR_ASSETS."/data");
 define("DIR_IMG", DIR_ASSETS."/img");
-define("DIR_MODULES", DIR_IMG."/apple");
-define("DIR_MODS", DIR_MODULES);			// A simple alias.
-define("DIR_MODS", DIR_MIN);				// Minification utility.
-define("DIR_SMARTY", DIR_MODS."/smarty");	// Templating engine directory.
+define("DIR_MODULES", DIR_ASSETS."/mod");
+define("DIR_MODS", DIR_MODULES);				// A simple alias.
+define("DIR_MIN", DIR_MIN);					// Minification utility.
+define("DIR_SMARTY", DIR_MODS."/smarty/libs");	// Templating engine directory.
 
 define("DIR_APPLE", DIR_IMG."/apple");
 define("DIR_APPLE_ICONS", DIR_APPLE."/icons");
