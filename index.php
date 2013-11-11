@@ -39,7 +39,17 @@ require_once "common.php";
 <body<?=$browser['classString']?>>
 	<div id="wrapper">
     	<section id="content">
-    		<div id="map"></div>
+			<?php
+			$ext = ".tpl";
+			// Default to home template.
+			$tpl = "home".$ext;
+			$tplDir = $smarty->getTemplateDir();
+			// If there is a variable in the query string specifying which page to load
+			// and the template exists, set $tpl to it.
+			if (isset($_GET['p']) && file_exists(str_replace("\\", "/", $tplDir[0].$_GET['p'].$ext)))
+				$tpl = $_GET['p'].$ext;	// Add extension here for transparency.
+            $smarty->display($tpl);
+            ?>
         </section>
     </div>
 </body>
