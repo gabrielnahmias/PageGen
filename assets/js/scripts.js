@@ -45,26 +45,6 @@ if (!Number.prototype.isInt) {
 		return this % 1 === 0;
 	}
 }
-if (!String.prototype.getDecimals) {
-	String.prototype.getDecimals = function() {
-		return parseFloat(this).getDecimals();
-	}
-}
-if (!String.prototype.reduce) {
-	String.prototype.reduce = function() {
-		var str = this,
-			parts = str.split("\n").join(" ").replace(/[\s\t\r]/gi, " ").trim().split(" "),
-			newParts = [],
-			newString = "";
-		$.each(parts, function(i, part) {
-			if (part != "") {
-				newParts.push(part);
-			}
-		});
-		newString = newParts.join(" ");
-		return newString;
-	}
-}
 if (!String.prototype.count) {
 	String.prototype.count = function(subString, allowOverlapping) {
 		var str = this,
@@ -85,6 +65,26 @@ if (!String.prototype.count) {
 				break;
 		}
 		return n;
+	}
+}
+if (!String.prototype.getDecimals) {
+	String.prototype.getDecimals = function() {
+		return parseFloat(this).getDecimals();
+	}
+}
+if (!String.prototype.reduce) {
+	String.prototype.reduce = function() {
+		var str = this,
+			parts = str.split("\n").join(" ").replace(/[\s\t\r]/gi, " ").trim().split(" "),
+			newParts = [],
+			newString = "";
+		$.each(parts, function(i, part) {
+			if (part != "") {
+				newParts.push(part);
+			}
+		});
+		newString = newParts.join(" ");
+		return newString;
 	}
 }
 if (!String.prototype.ucwords) {
