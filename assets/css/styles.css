@@ -27,18 +27,17 @@
 ::-webkit-input-placeholder {
     color: #999;
 }
-
 :-moz-placeholder {
     color: #999;
 }
-body, html, #map, #wrapper {
+body, html, #wrapper {
     height: 100%;
 	width: 100%;
 }
 body {
 	color: #666666;
-	padding: 0;
-    margin: 5px;
+	padding: 10px;
+    margin: 0;
 }
 body, input:not([type=text]) {
 	font: 12px Calibri, Arial, Helvetica, sans-serif;
@@ -73,14 +72,6 @@ textarea {
 #content {
 	height: 100%;
 }
-#input_wrapper {
-	border: 2px dashed #666666;
-	border-width: 2px 0;
-	margin-bottom: 20px;
-}
-#theme {
-	width: 194px;
-}
 #wrapper {
 	margin: auto;
 }
@@ -88,12 +79,6 @@ textarea {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-}
-
-/* Map */
-
-.leaflet-popup-content {
-	overflow: auto;
 }
 
 /* Mobile Ovverides */
