@@ -31,7 +31,6 @@
     color: #999;
 }
 body, html, #wrapper {
-    height: 100%;
 	width: 100%;
 }
 body {
@@ -192,10 +191,6 @@ body.iphone {
 		}
 
 /* Media Queries for Different Devices */
-
-/*
- * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
- */
 
 /* Smartphones (portrait and landscape) */
 @media only screen 
